@@ -10,19 +10,33 @@
     z-index: -1;
 }
 
-.hero_title{
+.title_component{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    height: 80vh;
+    flex-direction: row;
+    height: 70vh;
+    margin: 64px;
+    margin-bottom: 15vh;
 }
 
-.hero_title_top{
-
+.title_component span{
+    align-items: flex-end;
 }
 
-.hero_title_bottom{
+.title_socialmedia{
+    height: 16px;
+}
+
+.title_element{
+    
+}
+
+.upper_title_element{
+    
+}
+
+.lower_title_element{
     
 }
 
