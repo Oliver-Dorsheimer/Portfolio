@@ -1,3 +1,15 @@
+.aot {
+    background-image: url('/assets/img/hero-background.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
 .header_wrapper{
     max-width: 1980px;
 }
@@ -7,5 +19,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+}
+
+@media (max-width: 700px){
+    .header_navigation{
+        padding: 1vh;
+    }
+}
+
+@media (max-width: 480px){
+    
 }

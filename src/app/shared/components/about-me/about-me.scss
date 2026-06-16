@@ -1,0 +1,82 @@
+.about_wrapper{
+    max-width: 1980px;
+}
+
+.about_element{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 4vh;
+}
+
+.about_images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    width: 580px;
+}
+
+.yellow_img{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.blue_img{
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+}
+
+.orange_img{
+    position: absolute;
+    top: 220px;
+}
+
+.about_description{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.title{
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.text_after{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.talk_btn{
+    height: 40px;
+    width: 145px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border-radius: 32px;
+    border-color: white;
+    border-width: 1px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-inline: 2vh;
+}

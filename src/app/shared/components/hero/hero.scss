@@ -1,51 +1,125 @@
-.aot {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url('/assets/img/hero-background.png');
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
+.title_wrapper{
+    max-width: 1980px;
 }
 
 .title_component{
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     height: 70vh;
-    margin: 64px;
-    margin-bottom: 15vh;
-}
-
-.title_component span{
-    align-items: flex-end;
+    margin: 6vh;
+    margin-bottom: 20vh;
 }
 
 .title_socialmedia{
-    height: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.title_socialmedia_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 64px;
 }
 
 .title_element{
-    
+    width: 70vh;
 }
 
 .upper_title_element{
-    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4vh;
+    font-size: 64px;
 }
 
 .lower_title_element{
-    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 4vh;
+    font-size: 64px;
 }
 
 button {
     height: 40px;
     width: 145px;
-    background-color: black;
+    background-color: rgba(0,0,0,0);
     color: white;
-    border-radius: 16px;
+    border-radius: 32px;
     border-color: white;
     border-width: 1px;
+}
+
+@media (max-width: 1000px){
+    .title_component{
+        margin: 4vh;
+        margin-bottom: 20vh;
+    }
+    .upper_title_element{
+        font-size: 48px;
+    }
+    .lower_title_element{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 700px){
+    .title_component{
+        margin: 2vh;
+        margin-bottom: 20vh;
+    }
+    .upper_title_element{
+        font-size: 34px;
+    }
+    .lower_title_element{
+        font-size: 34px;
+    }
+    .title_socialmedia_container{
+        height: 36px;
+        width: 36px;
+    }
+    .upper_title_element{
+        gap: 2vh;
+    }
+    .lower_title_element{
+        gap: 2vh;
+    }
+}
+
+@media (max-width: 480px){
+    .title_component{
+        margin: 1vh;
+        margin-bottom: 20vh;
+    }
+    .upper_title_element{
+        font-size: 26px;
+    }
+    .lower_title_element{
+        font-size: 26px;
+    }
+    .title_socialmedia_container{
+        height: 36px;
+        width: 36px;
+    }
+    .upper_title_element{
+        gap: 2vh;
+    }
+    .lower_title_element{
+        gap: 2vh;
+    }
 }
