@@ -1,0 +1,35 @@
+.projects_wrapper{
+    max-width: 1980px;
+}
+
+.projects_section_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 256px;
+    padding-inline: 120px;
+}
+
+.projects_desc{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.projects_upper_title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.projects_title{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+
+.projects_text{
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 560px;
+}

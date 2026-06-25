@@ -1,0 +1,194 @@
+.skill_set_bg{
+    background-image: url('/assets/img/skills_bg.png');
+    background-position: bottom;
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+}
+
+.skill_set_wrapper{
+    max-width: 1980px;
+}
+
+.skill_set{
+    height: 800px;
+    max-width: 1980px;
+}
+
+.skill_set_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.upper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 48px;
+    box-sizing: border-box;
+    padding-top: 256px;
+}
+
+.upper_title{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: end;
+}
+
+.title_logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 8px;
+    font-weight: 700;
+    font-size: 64px;
+    height: 108px;
+}
+
+.my_stack_intoduction{
+    position: relative;
+    height: auto;
+    min-height: 144px;
+    width: 656px;
+    background-image: url('/assets/img/skills_page.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.intro_text{
+    position: absolute;
+    top: 40px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.lower{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin-top: 48px;
+    width: 1040px;
+}
+
+.my_stack_icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 640px;
+    box-sizing: border-box;
+}
+
+.my_stack_icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pull_to_peel_element{
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    height: 200px;
+    width: 200px;
+    background-image: url('/assets/img/pull.png');
+    background-position: center;
+    background-size: cover;
+    transform: rotate(8deg);
+    cursor: pointer;
+}
+
+.pull_to_peel_element_mobile{
+    display: flex;
+    justify-content: flex-end;
+    height: 200px;
+    width: 200px;
+    background-image: url('/assets/img/pull.png');
+    background-position: center;
+    background-size: cover;
+    transform: rotate(8deg);
+    cursor: pointer;
+}
+
+.mobile_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pull_to_peel_img{
+    height: 200px;
+    width: 200px;
+    transform: rotate(8deg);
+}
+
+.pull_content{
+    position: absolute;
+    top: 32px;
+    right: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    rotate: 8deg;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+@media (min-width: 1150px){
+    .mobile_container{
+        display: none;
+    }
+}
+
+@media (max-width: 1150px){
+    .upper{
+        flex-direction: column;
+        width: 80%;
+        padding-top: 126px;
+
+    }
+
+    .my_stack_logo{
+        text-align: end;
+        width: 100%;
+    }
+
+    .title_logo{
+        display: block;
+    }
+
+    .my_stack_intoduction{
+        width: 100%;
+    }
+
+    .lower{
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 32px;
+        width: auto;
+    }
+
+    .pull_to_peel_element{
+        display: none;
+    }
+
+    .mobile_container{
+        display: flex;
+        justify-items: flex-end;
+    }
+
+    .my_stack_icons{
+    gap: 16px;
+}
+}
